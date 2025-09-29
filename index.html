@@ -8,10 +8,11 @@
         <script src="script.js" async></script>
     </head>
     <body>
-        <div class="intro"> <!--Intro page-->
-            <img class="logo" src="resources\web_logo.png" alt="SpaceExplorer text with a rocket logo"> <!--Web logo-->       
-        </div>
-        <div class="content"> <!--Main content page-->
+        <section class="intro-page"> <!--Intro page-->
+            <img class="intro-logo" src="resources\web_logo.png" alt="SpaceExplorer text with a rocket logo"> <!--Web logo-->       
+            <video class="intro-bg" src="resources\bg_home.mov">Earth motion graphic</video>
+        </section>
+        <section class="content-page"> <!--Main content page-->
             <header> <!--Nav bar and web logo-->
                 <nav> <!--Open nav bar-->
                     <menu>
@@ -27,12 +28,12 @@
             </header>
             <main>
                 <video id="home" src="resources\bg_home.mov">Earth motion graphic</video>
-                <section id="about">
+                <article id="about">
                     <h1>Our resolution</h1>
                     <p>We are passionate about space exploration and aim to provide the best resources for enthusiasts and professionals alike.
                     We have been explore the planet for 5 years. Our destination is to find new planet that can support human life.</p>
-                </section>
-                <section id="explorer">
+                </article>
+                <article id="explorer">
                     <div class="planet1">
                         <img src="resources\planet1.png" alt="Planet 1 image">
                         <h2>Planet 1</h2>
@@ -43,11 +44,11 @@
                         <h2>Planet 2</h2>
                         <p>Explanation</p>
                     </div>              
-                </section>
+                </article>
             </main>
             <footer>
                 <p>&copy; 2025 Space Explorer. All rights reserved.</p>
             </footer>
-        </div>
+        </section>
     </body>
 </html>
