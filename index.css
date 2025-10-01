@@ -10,7 +10,7 @@ html{
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    background-color: #ff0000;
     color: #000;
 }
 
@@ -20,7 +20,9 @@ body{
     width: 100vw;
     height: 100vh;
 }
-.intro-page .intro-logo{
+
+/*Content page*/
+.content-page{
     
 }
 
