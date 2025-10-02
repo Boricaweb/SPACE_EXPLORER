@@ -13,6 +13,21 @@ body{
     background-color: #000000;
     color: #000;
 }
+/*Intro page fade out effect after click the logo(Javascript Event)*/
+@keyframes myAnimation{
+    /*Use frequenly percentage for smooth transition*/
+    0% {opacity: 1;}
+    10% {opacity: 0.9;}
+    20% {opacity: 0.8;}
+    30% {opacity: 0.7;}
+    40% {opacity: 0.6;}
+    50% {opacity: 0.5;}
+    60% {opacity: 0.4;}
+    70% {opacity: 0.3;}
+    80% {opacity: 0.2;}
+    90% {opacity: 0.1;}
+    100% {opacity: 0;}
+}
 
 /*Intro page*/
 .intro-page{
@@ -34,8 +49,16 @@ body{
 }
 .intro-logo{
     position: absolute;
-    width: 50rem;
+    width: 55rem;
     height: auto;
+    transition: all 1.2s ease-in-out;
+}
+
+/*Intro page effect*/
+.intro-logo:hover{
+    cursor: pointer;
+    transform: scale(0.7);
+    opacity: 0.2;
 }
 
 /*Content page*/
