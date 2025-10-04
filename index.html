@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Space Explorer</title>
         <link rel="stylesheet" href="index.css">
-        <!--<script src="script.js" async></script>-->
     </head>
     <body>
         <section class="intro-page"> <!--Intro page-->
@@ -14,7 +13,8 @@
         </section>
         <section class="content-page"> <!--Main content page-->
             <header> <!--Nav bar and web logo-->
-                <nav> <!--Open nav bar-->
+                <nav> <!--Nav bar part-->
+                    <button class="menu">&#9776; MENU</button> <!--Open nav bar-->
                     <menu>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About us</a></li>
@@ -23,11 +23,12 @@
                     </menu>
                     <img class="selector-rocket" src="resources\nav_select_icon.png" alt="Rocket icon"> <!--Rocket icon on nav bar-->
                 </nav>
-                <button class="menu">&#9776; MENU</button> <!--Close nav bar-->
-                <img class="logo" src="resources\web_logo.png" alt="SpaceExplorer text with a rocket logo"> <!--Web logo-->
+                <div class="bg-vdo">
+                    <video id="home" src="resources\bg_intro.mp4" type="video/mp4" autoplay loop>Earth motion graphic</video>
+                </div>
+                <img class="content-logo" src="resources\web_logo.png" alt="SpaceExplorer text with a rocket logo"> <!--Web logo-->
             </header>
             <main>
-                <video id="home" src="resources\bg_home.mov">Earth motion graphic</video>
                 <article id="about">
                     <h1>Our resolution</h1>
                     <p>We are passionate about space exploration and aim to provide the best resources for enthusiasts and professionals alike.

@@ -1,4 +1,4 @@
-/*Global setting*/
+/***Global setting***/
 *{
     margin: 0;
     padding: 0;
@@ -12,9 +12,10 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #000000;
     color: #000;
+    overflow-x: hidden;
 }
 /*Intro page fade out effect after click the logo(Javascript Event)*/
-@keyframes myAnimation{
+@keyframes introFadeOut{
     /*Use frequenly percentage for smooth transition*/
     0% {opacity: 1;}
     10% {opacity: 0.9;}
@@ -29,7 +30,8 @@ body{
     100% {opacity: 0;}
 }
 
-/*Intro page*/
+
+/**Intro page**/
 .intro-page{
     position: relative;
     width: 100vw;
@@ -37,6 +39,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .intro-bg{
     position: absolute;
@@ -49,11 +52,10 @@ body{
 }
 .intro-logo{
     position: absolute;
-    width: 55rem;
+    width: 20rem;
     height: auto;
     transition: all 1.2s ease-in-out;
 }
-
 /*Intro page effect*/
 .intro-logo:hover{
     cursor: pointer;
@@ -61,8 +63,30 @@ body{
     opacity: 0.2;
 }
 
-/*Content page*/
+
+/**Content page**/
 .content-page{
     display: none;
+    grid-template-rows: 2fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
 }
-
+/*header part*/
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: top;  
+}
+#home{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-logo{
+    
+    width: 8rem;
+    height: auto;
+}
