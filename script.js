@@ -26,8 +26,14 @@ const buttonMenu = document.querySelector('.button-menu');
 const navMenu = document.querySelector('.nav-menu');
 //The menu appear by click the menu button
 function mouseClickMenu() {
-    navBar.style.backgroundColor = 'rgba(255, 255, 255, 1)';
-    navMenu.style.opacity = '1';
+    if (navBar.style.backgroundColor !== 'rgba(255, 255, 255, 0.5)' && navMenu.style.opacity !== '0.5') {
+        navBar.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+        navMenu.style.opacity = '0.5';
+    }
+    else {
+        navBar.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+        navMenu.style.opacity = '0';
+    }   
 }
 //Add event to menu mouse click
 buttonMenu.addEventListener("click", mouseClickMenu);
