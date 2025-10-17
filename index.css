@@ -1,4 +1,4 @@
-/***Global setting***/
+/****Global setting****/
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +14,10 @@ body{
     color: #000;
     overflow-x: hidden;
 }
-/*Intro page fade out effect after click the logo(Javascript Event)*/
+
+
+
+/***Intro page fade out effect after click the logo(Javascript Event)***/
 @keyframes introFadeOut{
     /*Use frequenly percentage for smooth transition*/
     0% {opacity: 1;}
@@ -31,7 +34,8 @@ body{
 }
 
 
-/**Intro page**/
+
+/***Intro page***/
 .intro-page{
     position: relative;
     width: 100vw;
@@ -56,7 +60,7 @@ body{
     height: auto;
     transition: all 1.2s ease-in-out;
 }
-/*Intro page effect*/
+/**Intro page effect**/
 .intro-logo:hover{
     cursor: pointer;
     transform: scale(0.7);
@@ -64,14 +68,16 @@ body{
 }
 
 
-/**Content page**/
+
+/***Content page***/
 .content-page{
     display: none;
     grid-template-rows: 2fr 3fr 1fr;
     width: 100%;
     height: 100%;
 }
-/*header part*/
+
+/**header part**/
 header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -89,7 +95,7 @@ header{
     display: flex;
     justify-content: end;
     align-content: center;
-    width: 64.7vw;
+    width: 200%;
     height: 6rem;
 }
 .content-logo img{
@@ -97,10 +103,51 @@ header{
     width: auto;
     object-fit: contain;
 }
+
+/*nav bar part*/
 nav {
     display: grid;
-    grid-template: 1fr 4fr / 2fr 1fr;
+    grid-template: 1fr 4fr/ 1fr;
     width: 100%;
-    height: 100%;
+    height: 17rem;
+    border: 4px solid #ffff00;
 }
-
+.button-menu{
+    width: 20%;
+    height: 60%;
+}
+.nav-menu{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    border: 4px solid #ff0000;
+}
+/*menu bar part*/
+.nav-menu menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border: 4px solid #4c00ff;
+}
+.nav-menu menu a, .nav-menu menu li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+/*rocket-icon part*/
+.rocket-icon{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+    border: 4px solid #00ff2a;
+}
+.selector-rocket{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 10rem; /* -3rem for each adjacent nav bar topic when mouse hover*/
+}
