@@ -16,8 +16,8 @@ body{
 }
 
 
-
-/***Intro page fade out effect after click the logo(Javascript Event)***/
+/***Page keyframe effect***/
+/**Intro page fade out effect after click the logo(Javascript Event)**/
 @keyframes introFadeOut{
     /*Use frequenly percentage for smooth transition*/
     0% {opacity: 1;}
@@ -33,6 +33,25 @@ body{
     100% {opacity: 0;}
 }
 
+/**Content page - Nav bar appear after click menu bar (Javascript Event)**/
+/*Menu appear*/
+@keyframes menuAppear{
+    /*Use frequenly percentage for smooth transition*/
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+/*Nav background color fade in*/
+@keyframes NavFadeIn{
+    /*Use frequenly percentage for smooth transition*/
+    0% {background-color: rgba(255, 255, 255, 0);}
+    25% {background-color: rgba(255, 255, 255, 0.25);}
+    50% {background-color: rgba(255, 255, 255, 0.5);}
+    75% {background-color: rgba(255, 255, 255, 0.75);}
+    100% {background-color: rgba(255, 255, 255, 1);}
+}
 
 
 /***Intro page***/
@@ -107,22 +126,33 @@ header{
 /*nav bar part*/
 nav {
     display: grid;
-    grid-template: 1fr 4fr/ 1fr;
+    grid-template: 1fr 5fr/ 1fr;
     width: 100%;
     height: 17rem;
-    border: 4px solid #ffff00;
+    margin: 0.5rem 0 0 0.5rem;
+    background-color: rgba(255, 255, 255, 0);
 }
+/*menu button part*/
 .button-menu{
-    width: 20%;
-    height: 60%;
+    width: 25%;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    opacity: 0.5;
 }
+.button-menu:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+/*menu bar part*/
 .nav-menu{
     display: flex;
     width: 40%;
     height: 100%;
-    border: 4px solid #ff0000;
+    padding-top: 1rem;
+    opacity: 0;
 }
-/*menu bar part*/
 .nav-menu menu{
     display: flex;
     flex-direction: column;
@@ -130,12 +160,19 @@ nav {
     align-items: center;
     width: 50%;
     height: 100%;
-    border: 4px solid #4c00ff;
 }
 .nav-menu menu a, .nav-menu menu li{
+    font-size: 0.8rem;
     text-decoration: none;
     list-style: none;
     margin-bottom: 1.5rem;
+    color: #000000;
+    opacity: 0.7;
+}
+.nav-menu menu a, .nav-menu menu li:hover{
+    opacity: 1;
+    color: #000;
+    font-weight: bold;
 }
 /*rocket-icon part*/
 .rocket-icon{
@@ -144,10 +181,9 @@ nav {
     align-items: flex-end;
     width: 50%;
     height: 100%;
-    border: 4px solid #00ff2a;
 }
 .selector-rocket{
     width: 2.5rem;
     height: 2.5rem;
-    margin-bottom: 10rem; /* -3rem for each adjacent nav bar topic when mouse hover*/
+    margin-bottom: 11.5rem; /* -3.5rem for each adjacent nav bar topic when mouse hover*/
 }
