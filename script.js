@@ -3,6 +3,7 @@
 const introPage = document.querySelector('.intro-page');
 const introLogo = document.querySelector('.intro-logo');
 const contentPage = document.querySelector('.content-page');
+
 //Turn intro page into main page by click the logo image
 function mouseClickRocket() {
     introPage.style.animation = 'introFadeOut 1s';
@@ -15,6 +16,7 @@ function mouseClickRocket() {
     }
     introPage.addEventListener('animationend', aniEnd);
 }
+
 //Add event to logo mouse click
 introLogo.addEventListener("click", mouseClickRocket);
 
@@ -24,16 +26,40 @@ introLogo.addEventListener("click", mouseClickRocket);
 const navBar = document.querySelector('nav');
 const buttonMenu = document.querySelector('.button-menu');
 const navMenu = document.querySelector('.nav-menu');
+const rocketIcon = document.querySelector('.selector-rocket');
+const menuLink = document.querySelectorAll('.nav-menu menu li');
+
 //The menu appear by click the menu button
 function mouseClickMenu() {
-    if (navBar.style.backgroundColor !== 'rgba(255, 255, 255, 0.5)' && navMenu.style.opacity !== '0.5') {
-        navBar.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
-        navMenu.style.opacity = '0.5';
+    if (navBar.style.backgroundColor !== 'rgba(0, 0, 0, 0.5)' && navMenu.style.opacity !== '1') {
+        navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        navMenu.style.opacity = '1';
+        buttonMenu.style.backgroundColor = 'rgb(0, 0, 0)';
+        buttonMenu.style.color = 'rgb(255, 255, 255)';
+        buttonMenu.style.opacity = '0.5';
     }
     else {
         navBar.style.backgroundColor = 'rgba(255, 255, 255, 0)';
         navMenu.style.opacity = '0';
-    }   
+        buttonMenu.style.backgroundColor = 'rgb(255, 255, 255)';
+        buttonMenu.style.color = 'rgb(0, 0, 0)';
+        buttonMenu.style.opacity = '1';
+    }
 }
+
+
 //Add event to menu mouse click
 buttonMenu.addEventListener("click", mouseClickMenu);
+
+//Rocket icon move 
+function rocketMove() {
+    switch (menuLink) {
+        case menuLink[0]: rocketIcon.style.bottom = '10.5rem'; break;
+        case menuLink[1]: rocketIcon.style.bottom = '7.5rem'; break;
+        case menuLink[2]: rocketIcon.style.bottom = '4.5rem'; break;
+        case menuLink[3]: rocketIcon.style.bottom = '1.5rem'; break;
+        default: rocketIcon.style.bottom = '10.5rem'; break;
+    }
+}
+//Add event to menu mouse click
+menuLink.addEventListener("mouseover", rocketMove);
