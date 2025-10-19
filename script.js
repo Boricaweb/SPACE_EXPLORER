@@ -64,8 +64,9 @@ menuLink.forEach(li => {
 
 //About bg appear after scroll to it part
 function bgAppear() {
-    
+    aboutContent.style.backgroundImage = 'url("resources/bg_about.jpg")';
+    aboutContent.style.backgroundSize = 'cover';
 }
 //Add event to the about part for mouse scrolling
-aboutContent.addEventListener("scroll", bgAppear);
+aboutContent.addEventListener("mouseover", bgAppear);
 aboutContent.addEventListener("focus", bgAppear);
