@@ -16,7 +16,6 @@ function mouseClickRocket() {
     }
     introPage.addEventListener('animationend', aniEnd);
 }
-
 //Add event to logo mouse click
 introLogo.addEventListener("click", mouseClickRocket);
 
@@ -28,6 +27,7 @@ const buttonMenu = document.querySelector('.button-menu');
 const navMenu = document.querySelector('.nav-menu');
 const rocketIcon = document.querySelector('.selector-rocket');
 const menuLink = document.querySelectorAll('.nav-menu menu li');
+const aboutContent = document.getElementById('about');
 
 //The menu appear by click the menu button
 function mouseClickMenu() {
@@ -46,7 +46,6 @@ function mouseClickMenu() {
         buttonMenu.style.opacity = '1';
     }
 }
-
 //Add event to menu mouse click
 buttonMenu.addEventListener("click", mouseClickMenu);
 
@@ -57,11 +56,16 @@ function rocketMove(event) {
     const calNum = 10.5 - (index * 3); //Formula for change the rocket icon position
     rocketIcon.style.bottom = calNum + 'rem';
 }
-
 //Add event to each menu which was click by mouse 
 menuLink.forEach(li => {
     li.addEventListener("mouseover", rocketMove);
     li.addEventListener("focus", rocketMove);
 })
 
-
+//About bg appear after scroll to it part
+function bgAppear() {
+    
+}
+//Add event to the about part for mouse scrolling
+aboutContent.addEventListener("scroll", bgAppear);
+aboutContent.addEventListener("focus", bgAppear);
