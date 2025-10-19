@@ -165,7 +165,7 @@ nav {
 /*rocket-icon part*/
 .rocket-icon{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
     width: 50%;
     height: 100%;
@@ -175,5 +175,5 @@ nav {
     bottom: 10.5rem; /* -3rem for each adjacent nav bar topic when mouse hover*/
     width: 2.5rem;
     height: 2.5rem;
-    /*transition: bottom 0.5s;*/
+    transition: bottom 1s;
 }

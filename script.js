@@ -47,19 +47,21 @@ function mouseClickMenu() {
     }
 }
 
-
 //Add event to menu mouse click
 buttonMenu.addEventListener("click", mouseClickMenu);
 
 //Rocket icon move 
-function rocketMove() {
-    switch (menuLink) {
-        case menuLink[0]: rocketIcon.style.bottom = '10.5rem'; break;
-        case menuLink[1]: rocketIcon.style.bottom = '7.5rem'; break;
-        case menuLink[2]: rocketIcon.style.bottom = '4.5rem'; break;
-        case menuLink[3]: rocketIcon.style.bottom = '1.5rem'; break;
-        default: rocketIcon.style.bottom = '10.5rem'; break;
-    }
+function rocketMove(event) {
+    const li = event.currentTarget; //Target the li tag which get mouse event 
+    const index = Array.from(menuLink).indexOf(li); //Define the index of the current li tag
+    const calNum = 10.5 - (index * 3); //Formula for change the rocket icon position
+    rocketIcon.style.bottom = calNum + 'rem';
 }
-//Add event to menu mouse click
-menuLink.addEventListener("mouseover", rocketMove);
+
+//Add event to each menu which was click by mouse 
+menuLink.forEach(li => {
+    li.addEventListener("mouseover", rocketMove);
+    li.addEventListener("focus", rocketMove);
+})
+
+
