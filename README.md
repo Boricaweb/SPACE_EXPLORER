@@ -3,4 +3,5 @@
 2. Rocket icon on Nav bar: https://www.freepik.com/author/yliv/icons
 3. Planet background: https://www.freepik.com/author/baldasaridstock/videos
 4. Star bg on about content part: https://unsplash.com/@gabrigara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-      
+5. planet1: https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+            

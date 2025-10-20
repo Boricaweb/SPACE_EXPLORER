@@ -27,7 +27,6 @@ const buttonMenu = document.querySelector('.button-menu');
 const navMenu = document.querySelector('.nav-menu');
 const rocketIcon = document.querySelector('.selector-rocket');
 const menuLink = document.querySelectorAll('.nav-menu menu li');
-const aboutContent = document.getElementById('about');
 
 //The menu appear by click the menu button
 function mouseClickMenu() {
@@ -62,11 +61,3 @@ menuLink.forEach(li => {
     li.addEventListener("focus", rocketMove);
 })
 
-//About bg appear after scroll to it part
-function bgAppear() {
-    aboutContent.style.backgroundImage = 'url("resources/bg_about.jpg")';
-    aboutContent.style.backgroundSize = 'cover';
-}
-//Add event to the about part for mouse scrolling
-aboutContent.addEventListener("mouseover", bgAppear);
-aboutContent.addEventListener("focus", bgAppear);
