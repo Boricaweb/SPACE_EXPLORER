@@ -269,8 +269,8 @@ main{
     min-height: 64rem;
 }
 #explorer .planet1 img{
-    width: 36rem;
-    height: 29rem;
+    width: 30rem;
+    height: 25rem;
     border-radius: 10%;
     margin: 2rem 2rem 2rem 0;
 }
@@ -280,7 +280,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 30rem;
-    height: 29rem;
+    height: 25rem;
     border-radius: 10%;
     gap: 2rem;
     background-color: rgb(255, 255, 255);
@@ -306,8 +306,8 @@ main{
     min-height: 66rem;
 }
 #explorer .planet2 img{
-    width: 36rem;
-    height: 29rem;
+    width: 30rem;
+    height: 25rem;
     border-radius: 10%;
     margin: 2rem 2rem 2rem 0;
 }
@@ -317,7 +317,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 30rem;
-    height: 29rem;
+    height: 25rem;
     border-radius: 10%;
     gap: 2rem;
     background-color: rgb(255, 255, 255);
@@ -339,9 +339,82 @@ footer{
     color:rgb(255, 255, 255);
     font-size: 1rem;
     width: 100vw;
-    height: 5rem;
+    height: 100%;
     background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/***Responsive design for different screen size***/
+@media all and (max-width: 450px){
+    /***header part***/
+    /**nav bar part**/
+    nav{
+        width: 80%;
+    }
+    .button-menu{
+        width: 50%;
+    }
+    .content-logo{
+        width: 100%;
+        height: 12%;
+    }
+    .content-logo img{
+        height: 100%;
+        width: 23%;
+        object-fit: cover;
+    }
+    /*menu bar part*/
+    .nav-menu{
+        width: 100%;
+    }
+    .nav-menu menu{
+        width: 60%;
+        height: 100%;
+    }
+    .nav-menu menu a, .nav-menu menu li{
+        font-size: 0.9rem;
+    }
+    .selector-rocket{
+        width: 2rem;
+        height: 2.5rem;
+    }
+
+    /***Main part***/
+    /*article id=about*/
+    #about h1{
+        width: 80%;
+        font-size: 3rem;
+    }
+    #about p{
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    /*article id=explorer*/
+    #explorer .planet1, #explorer .planet2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #explorer .planet1 img, #explorer .planet2 img{
+        width: 24rem;
+        height: 19rem;
+        margin: 2rem 2rem 3rem 2rem;
+    }
+    #explorer .planet1-info, #explorer .planet2-info{
+        width: 24rem;
+        height: 19rem;
+    }
 }
