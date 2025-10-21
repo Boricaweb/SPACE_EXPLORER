@@ -52,7 +52,7 @@ buttonMenu.addEventListener("click", mouseClickMenu);
 function rocketMove(event) {
     const li = event.currentTarget; //Target the li tag which get mouse event 
     const index = Array.from(menuLink).indexOf(li); //Define the index of the current li tag
-    const calNum = 10.5 - (index * 3); //Formula for change the rocket icon position
+    const calNum = 12.8 - (index * 3); //Formula for change the rocket icon position
     rocketIcon.style.bottom = calNum + 'rem';
 }
 //Add event to each menu which was click by mouse 

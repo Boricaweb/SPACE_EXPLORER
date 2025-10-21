@@ -139,7 +139,7 @@ nav {
     display: grid;
     grid-template: 1fr 5fr/ 1fr;
     width: 30%;
-    height: 17rem;
+    height: 18rem;
     margin: 0.5rem 0 0 0.5rem;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 1rem;
@@ -200,7 +200,7 @@ nav {
 }
 .selector-rocket{
     position: relative;
-    bottom: 10.5rem; /* -3rem for each adjacent nav bar topic when mouse hover*/
+    bottom: 12.8rem; /* -3rem for each adjacent nav bar topic when mouse hover*/
     width: 2.5rem;
     height: 2.5rem;
     transition: bottom 1s;
@@ -355,7 +355,7 @@ footer p{
 
 
 /***Responsive design for different screen size***/
-@media all and (max-width: 450px){
+@media all and (max-width: 480px){
     /***header part***/
     /**nav bar part**/
     nav{
