@@ -116,30 +116,39 @@ header{
     height: 38.3rem;
     object-fit: cover;
 }
-.content-logo{
-    position: relative;
-    right: 0;
+
+/*fixed navbar*/
+.fixed-nav{
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    justify-content: space-between;
+}
+/*logo part*/
+.content-logo{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    height: 6rem;
+    height: 7rem;
 }
 .content-logo img{
-    height: 100%;
-    width: 20%;
+    height: 5rem;
+    width: auto;
     object-fit: contain;
 }
-
 /*nav bar part*/
 nav {
     position: relative;
     left: 0;
     display: grid;
-    grid-template: 1fr 5fr/ 1fr;
+    grid-template: 1fr 4fr/ 1fr;
     width: 30%;
-    height: 17rem;
+    height: 16rem;
     margin: 0.5rem 0 0 0.5rem;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 1rem;
@@ -147,7 +156,7 @@ nav {
 /*menu button part*/
 .button-menu{
     font-family: 'Changa', sans-serif;
-    width: 40%;
+    width: 35%;
     height: 100%;
     font-size: 1rem;
     border: none;
@@ -165,7 +174,7 @@ nav {
     display: flex;
     width: 60%;
     height: 100%;
-    padding-top: 1rem;
+    margin-left: 1rem;
     opacity: 0;
 }
 .nav-menu menu{
@@ -200,7 +209,7 @@ nav {
 }
 .selector-rocket{
     position: relative;
-    bottom: 12.8rem; /* -3rem for each adjacent nav bar topic when mouse hover*/
+    bottom: 10rem; /* -3rem for each adjacent nav bar topic when mouse hover*/
     width: 2.5rem;
     height: 2.5rem;
     transition: bottom 1s;
@@ -356,27 +365,14 @@ footer p{
     /***content part***/
     /**nav bar part**/
     nav{
-        width: 80%;
+        width: 70%;
     }
     .button-menu{
         width: 50%;
     }
-    .content-logo{
-        width: 100%;
-        height: 12%;
-    }
-    .content-logo img{
-        height: 100%;
-        width: 23%;
-        object-fit: cover;
-    }
     /*menu bar part*/
-    .nav-menu{
-        width: 100%;
-    }
     .nav-menu menu{
-        width: 60%;
-        height: 100%;
+        width: 80%;
     }
     .nav-menu menu a, .nav-menu menu li{
         font-size: 0.9rem;
