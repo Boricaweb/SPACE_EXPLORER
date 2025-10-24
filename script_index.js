@@ -30,16 +30,16 @@ const menuLink = document.querySelectorAll('.nav-menu menu li');
 
 //The menu appear by click the menu button
 function mouseClickMenu() {
-    if (navBar.style.backgroundColor !== 'rgba(0, 0, 0, 0.5)' && navMenu.style.opacity !== '1') {
+    if (navBar.style.backgroundColor !== 'rgba(0, 0, 0, 0.5)' && navMenu.style.display !== 'flex') {
         navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-        navMenu.style.opacity = '1';
+        navMenu.style.display = 'flex';
         buttonMenu.style.backgroundColor = 'rgb(0, 0, 0)';
         buttonMenu.style.color = 'rgb(255, 255, 255)';
         buttonMenu.style.opacity = '0.5';
     }
     else {
         navBar.style.backgroundColor = 'rgba(255, 255, 255, 0)';
-        navMenu.style.opacity = '0';
+        navMenu.style.display = 'none';
         buttonMenu.style.backgroundColor = 'rgb(255, 255, 255)';
         buttonMenu.style.color = 'rgb(0, 0, 0)';
         buttonMenu.style.opacity = '1';

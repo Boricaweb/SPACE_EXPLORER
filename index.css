@@ -95,7 +95,7 @@ body{
 /***Content page***/
 .content-page{
     display: none;
-    grid-template-rows: 38.3rem 175rem 5rem;
+    grid-template-rows: 38.3rem 170.5rem 3rem;
     width: 100vw;
     height: 100%;
 }
@@ -171,11 +171,10 @@ nav {
 
 /*menu bar part*/
 .nav-menu{
-    display: flex;
+    display: none;
     width: 60%;
     height: 100%;
     margin-left: 1rem;
-    opacity: 0;
 }
 .nav-menu menu{
     display: flex;
@@ -209,7 +208,7 @@ nav {
 }
 .selector-rocket{
     position: relative;
-    bottom: 10rem; /* -3rem for each adjacent nav bar topic when mouse hover*/
+    bottom: 10.5rem; /* -3rem for each adjacent nav bar topic when mouse hover*/
     width: 2.5rem;
     height: 2.5rem;
     transition: bottom 1s;
@@ -265,7 +264,7 @@ main{
     animation: bgZommIn 20s ease-in-out infinite;  
 }
 /*Explorer planet1*/
-#explorer .planet1{
+#explorer .project1, .project2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,13 +272,18 @@ main{
     width: 76rem;
     min-height: 64rem;
 }
-#explorer .planet1 img{
+#explorer .project1 img, .project2 img{
     width: 30rem;
     height: 25rem;
     border-radius: 10%;
     margin: 2rem 2rem 2rem 0;
+    transition: all 0.5s ease-in-out;
 }
-#explorer .planet1-info{
+#explorer .project1 img:hover, .project2 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#explorer .project1-info, .project2-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -287,63 +291,39 @@ main{
     width: 30rem;
     height: 25rem;
     border-radius: 10%;
-    gap: 2rem;
+    gap: 1rem;
     background-color: rgb(255, 255, 255);
 }
-#explorer .planet1-info h2{
+#explorer .project1-info h2, .project2-info h2{
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
 }
-#explorer .planet1-info p{
+#explorer .project1-info p, .project2-info p{
     font-size: 1rem;
     color: rgb(0, 0, 0);
     width: 80%;
     text-align: start;
     line-height: 1.5rem;
+    border-bottom: 0.2rem solid rgb(171, 171, 171);
+    padding-bottom: 2rem;
 }
-/*Explorer planet2*/
-#explorer .planet2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 76rem;
-    min-height: 66rem;
-}
-#explorer .planet2 img{
-    width: 30rem;
-    height: 25rem;
-    border-radius: 10%;
-    margin: 2rem 2rem 2rem 0;
-}
-#explorer .planet2-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30rem;
-    height: 25rem;
-    border-radius: 10%;
-    gap: 2rem;
-    background-color: rgb(255, 255, 255);
-}
-#explorer .planet2-info h2{
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-}
-#explorer .planet2-info p{
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
+#explorer .project1-info .web-icon, .project2-info .web-icon{
     width: 80%;
-    text-align: start;
-    line-height: 1.5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
+#explorer .project1-info .web-icon img{
+    width: 3rem;
+    height: auto;
+}
+
 
 /**Footer part**/
 footer{
     color:rgb(255, 255, 255);
     font-size: 1rem;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -395,19 +375,19 @@ footer p{
     }
 
     /*article id=explorer*/
-    #explorer .planet1, #explorer .planet2{
+    #explorer .project1, #explorer .project2{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #explorer .planet1 img, #explorer .planet2 img{
-        width: 22rem;
-        height: 17rem;
+    #explorer .project1 img, #explorer .project2 img{
+        width: 23rem;
+        height: 18rem;
         margin: 2rem 2rem 3rem 2rem;
     }
-    #explorer .planet1-info, #explorer .planet2-info{
-        width: 22rem;
+    #explorer .project1-info, #explorer .project2-info{
+        width: 23rem;
         height: 20rem;
     }
 }
