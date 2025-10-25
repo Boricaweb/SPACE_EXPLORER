@@ -95,7 +95,7 @@ body{
 /***Content page***/
 .content-page{
     display: none;
-    grid-template-rows: 38.3rem 170.5rem 3rem;
+    grid-template-rows: 38.3rem 685rem 3rem;
     width: 100vw;
     height: 100%;
 }
@@ -124,7 +124,8 @@ header{
     left: 0;
     z-index: 10;
     width: 100%;
-    height: 16rem;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.443);
     display: flex;
     justify-content: space-between;
 }
@@ -258,13 +259,13 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
-    min-height: 120rem;
+    min-height: 640rem;
     background-image: url('resources/planet_bg.jpg');
     background-size: cover;
     animation: bgZommIn 20s ease-in-out infinite;  
 }
 /*Explorer planet1*/
-#explorer .project1, .project2{
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9, .project10{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,18 +273,23 @@ main{
     width: 76rem;
     min-height: 64rem;
 }
-#explorer .project1 img, .project2 img{
+.project1 a, .project2 a, .project3 a, .project4 a, .project5 a, .project6 a, .project7 a, .project8 a, .project9 a, .project10 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project1 a img, .project2 a img, .project3 a img, .project4 a img, .project5 a img, .project6 a img, .project7 a img, .project8 a img, .project9 a img, .project10 a img{
     width: 30rem;
     height: 25rem;
     border-radius: 10%;
     margin: 2rem 2rem 2rem 0;
     transition: all 0.5s ease-in-out;
 }
-#explorer .project1 img:hover, .project2 img:hover{
+.project1 a img:hover, .project2 a img:hover, .project3 a img:hover, .project4 a img:hover, .project5 a img:hover, .project6 a img:hover, .project7 a img:hover, .project8 a img:hover, .project9 a img:hover, .project10 a img:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
-#explorer .project1-info, .project2-info{
+.project1-info, .project2-info, .project3-info, .project4-info, .project5-info, .project6-info, .project7-info, .project8-info, .project9-info, .project10-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -294,11 +300,11 @@ main{
     gap: 1rem;
     background-color: rgb(255, 255, 255);
 }
-#explorer .project1-info h2, .project2-info h2{
+.project1-info h2, .project2-info h2, .project3-info h2, .project4-info h2, .project5-info h2, .project6-info h2, .project7-info h2, .project8-info h2, .project9-info h2, .project10-info h2{
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
 }
-#explorer .project1-info p, .project2-info p{
+.project1-info p, .project2-info p, .project3-info p, .project4-info p, .project5-info p, .project6-info p, .project7-info p, .project8-info p, .project9-info p, .project10-info p{
     font-size: 1rem;
     color: rgb(0, 0, 0);
     width: 80%;
@@ -307,15 +313,19 @@ main{
     border-bottom: 0.2rem solid rgb(171, 171, 171);
     padding-bottom: 2rem;
 }
-#explorer .project1-info .web-icon, .project2-info .web-icon{
+.project1-info .web-icon, .project2-info .web-icon, .project3-info .web-icon, .project4-info .web-icon, .project5-info .web-icon, .project6-info .web-icon, .project7-info .web-icon, .project8-info .web-icon, .project9-info .web-icon, .project10-info .web-icon{
     width: 80%;
     height: auto;
     display: flex;
     justify-content: center;
 }
-#explorer .project1-info .web-icon img{
+.project1-info .web-icon img, .project2-info .web-icon img, .project3-info .web-icon img, .project4-info .web-icon img, .project5-info .web-icon img, .project6-info .web-icon img, .project7-info .web-icon img, .project8-info .web-icon img, .project9-info .web-icon img, .project10-info .web-icon img{
     width: 3rem;
     height: auto;
+}
+.project1-info .web-icon img:hover, .project2-info .web-icon img:hover, .project3-info .web-icon img:hover, .project4-info .web-icon img:hover, .project5-info .web-icon img:hover, .project6-info .web-icon img:hover, .project7-info .web-icon img:hover, .project8-info .web-icon img:hover, .project9-info .web-icon img:hover, .project10-info .web-icon img:hover{
+    background-color: rgba(0, 0, 0, 0.153);
+    border-radius: 0.5rem;
 }
 
 
@@ -375,38 +385,36 @@ footer p{
     }
 
     /*article id=explorer*/
-    #explorer .project1, #explorer .project2{
+    .project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9, .project10{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #explorer .project1 img, #explorer .project2 img{
+    .project1 a img, .project2 a img, .project3 a img, .project4 a img, .project5 a img, .project6 a img, .project7 a img, .project8 a img, .project9 a img, .project10 a img{
         width: 23rem;
         height: 18rem;
         margin: 2rem 2rem 3rem 2rem;
     }
-    #explorer .project1-info, #explorer .project2-info{
+    .project1-info, .project2-info, .project3-info, .project4-info, .project5-info, .project6-info, .project7-info, .project8-info, .project9-info, .project10-info{
         width: 23rem;
-        height: 20rem;
+        height: 30rem;
     }
 }
 /*For small mobile screen devices*/
 @media all and (max-width: 380px){
     /***content part***/
     /*article id=explorer*/
-    #explorer .planet1 img, #explorer .planet2 img{
+    .project1 a img, .project2 a img, .project3 a img, .project4 a img, .project5 a img, .project6 a img, .project7 a img, .project8 a img, .project9 a img, .project10 a img{
         width: 16.2rem;
         height: 13rem;
     }
-    #explorer .planet1-info, #explorer .planet2-info{
+    .project1-info, .project2-info, .project3-info, .project4-info, .project5-info, .project6-info, .project7-info, .project8-info, .project9-info, .project10-info{
         width: 16.2rem;
-        height: 20rem;
-    }
-    #explorer .planet1-info, #explorer .planet2-info{
+        height: 27rem;
         gap: 1rem;
     }
-    #explorer .planet2-info p{
+    .project1-info p, .project2-info p, .project3-info p, .project4-info p, .project5-info p, .project6-info p, .project7-info p, .project8-info p, .project9-info p, .project10-info p{
         font-size: 0.8rem;
         line-height: 1.2rem;
     }
