@@ -303,6 +303,8 @@ main{
 .project1-info h2, .project2-info h2, .project3-info h2, .project4-info h2, .project5-info h2, .project6-info h2, .project7-info h2, .project8-info h2, .project9-info h2, .project10-info h2{
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
 }
 .project1-info p, .project2-info p, .project3-info p, .project4-info p, .project5-info p, .project6-info p, .project7-info p, .project8-info p, .project9-info p, .project10-info p{
     font-size: 1rem;
@@ -400,6 +402,13 @@ footer p{
         width: 23rem;
         height: 30rem;
     }
+    h2{
+        font-size: 1rem;
+    }
+    .project1-info p, .project2-info p, .project3-info p, .project4-info p, .project5-info p, .project6-info p, .project7-info p, .project8-info p, .project9-info p, .project10-info p{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
 }
 /*For small mobile screen devices*/
 @media all and (max-width: 380px){
@@ -413,6 +422,9 @@ footer p{
         width: 16.2rem;
         height: 27rem;
         gap: 1rem;
+    }
+    .project1-info h2, .project2-info h2, .project3-info h2, .project4-info h2, .project5-info h2, .project6-info h2, .project7-info h2, .project8-info h2, .project9-info h2, .project10-info h2{
+        font-size: 1rem;
     }
     .project1-info p, .project2-info p, .project3-info p, .project4-info p, .project5-info p, .project6-info p, .project7-info p, .project8-info p, .project9-info p, .project10-info p{
         font-size: 0.8rem;
