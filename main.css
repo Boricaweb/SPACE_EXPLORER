@@ -22,6 +22,9 @@ nav{
 .nav-link{
     color: white;
 }
+.nav-link:hover{
+    color: red;
+}
 /*web logo*/
 .navbar-brand{
     min-width: 3rem;
@@ -33,8 +36,8 @@ nav{
 /**profile image part**/
 .dev-pic{
     margin-top: 8rem;
-    width: 20rem;
-    height: 25rem;
+    width: 25rem;
+    height: 30rem;
 }
 .dev-info{
     margin-top: 8rem;
