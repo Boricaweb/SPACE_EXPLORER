@@ -28,3 +28,14 @@ nav{
     max-width: 5rem;  
     height: auto;
 }
+
+/***main part***/
+/**profile image part**/
+.dev-pic{
+    margin-top: 8rem;
+    width: 20rem;
+    height: 25rem;
+}
+.dev-info{
+    margin-top: 8rem;
+}
