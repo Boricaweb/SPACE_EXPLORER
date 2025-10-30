@@ -28,19 +28,20 @@
             </div>
         </nav>
     </header>
-    <main class="container-fluid">
+    <main class="container">
         <div id="profile" class="row">
             <!--my profile picture-->
-            <section class="container dev-pic col-sm-6">
+            <section class="dev-pic col">
                 <img class="w-100 h-100" src="resources\profile_img.jpg" alt="profile picture by AI generate">
             </section>   
             <!--my info and skills-->   
-            <section class="container dev-info col-xxl-4 col-sm-6">
-                <h1 class="text-light">Mr.Thanapol</h1>
-                <p></p>
+            <section class="dev-info text-light col">
+                <h1>Mr.Thanapol</h1>
+                <p>About me</p>
+                <p>bla bla bla</p>
             </section> 
             <!--my projects as carousel style slide--> 
-            <section class="container col-xxl-4 col-sm-6">
+            <section class="col">
                 <div class="carousel slide" id="project-slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <button class="active" data-bs-target="#project-slide" data-bs-slide-to="0"></button>
@@ -59,90 +60,94 @@
                         <div class="carousel-item active">
                             <img src="resources\Cheatsheet_img.png" alt="1st projects, name cheatsheet">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>My Cheat Sheet</h2>
                             </div>
                         </div>
                         <!--project2-->   
-                        <div class="carousel-item active">
-                            <img>
+                        <div class="carousel-item">
+                            <img src="resources\Wireframe_img.png" alt="2nd projects, name wireframe">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>Wireframe</h2>
                             </div>
                         </div>
                         <!--project3-->   
-                        <div class="carousel-item active">
-                            <img>
+                        <div class="carousel-item">
+                            <img src="resources\TeaCafe_img.png" alt="3rd projects, Tea Cafe">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>Tea Cafe</h2>
                             </div>
                         </div>
                         <!--project4-->   
-                        <div class="carousel-item active">
-                            <img>
+                        <div class="carousel-item">
+                            <img src="resources\Fotomatric_img.png" alt="4th projects, Fotomatric">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>Fotomatric</h2>
                             </div>
                         </div>
                         <!--project5-->   
-                        <div class="carousel-item active">
-                            <img>
+                        <div class="carousel-item">
+                            <img src="resources\NatureLife_img.png" alt="5th projects, Nature Life">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>Nature Life</h2>
                             </div>
                         </div>
                         <!--project6-->   
-                        <div class="carousel-item active">
-                            <img>
+                        <div class="carousel-item">
+                            <img src="resources\HikingClub_img.png" alt="6th projects, Hiking Club">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>Hiking Club</h2>
                             </div>
                         </div>
                         <!--project7-->   
-                        <div class="carousel-item active">
-                            <img>
+                        <div class="carousel-item">
+                            <img src="resources\NumberGuesser_img.png" alt="7th projects, Number Guesser">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>Number Guesser</h2>
                             </div>
                         </div>
                         <!--project8-->   
-                        <div class="carousel-item active">
-                            <img>
+                        <div class="carousel-item">
+                            <img src="resources\CreditCardChecker_img.png" alt="8th projects, Credit Card Checker">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>Credit Card Checker</h2>
                             </div>
                         </div>
                         <!--project9-->   
-                        <div class="carousel-item active">
-                            <img>
+                        <div class="carousel-item">
+                            <img src="resources\MysteriousOrganism_img.png" alt="9th projects, Mysterious Organism">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>Mysterious Orgaism</h2>
                             </div>
                         </div>
                         <!--project10-->   
-                        <div class="carousel-item active">
-                            <img>
+                        <div class="carousel-item">
+                            <img src="resources\WhatGameShouldIPlay_img.png" alt="10th projects, What game should I play?">
                             <div class="carousel-caption">
-                                <h2>Project1</h2>
-                                <p>bla bla</p>
+                                <h2>What game should I play?</h2>
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#project-slide">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span> <!--hidden message for screen reader-->
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#project-slide">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span> <!--hidden message for screen reader-->
+                    </button>
                 </div>
             </section>    
         </div>
     </main>    
     <footer>
-        <form>
-
+        <form class="container my-4 d-flex flex-column">
+            <div class="mb-1">
+                <label for="#comment" class="form-label text-light bg-black p-1 border rounded-1">Please give me some advice</label>
+                <textarea id="comment" class="form-control" cols="5" rows="5"></textarea>
+            </div>    
+            <div class="align-self-end">
+                <button class="submit p-1 border rounded-1">Submit</button>
+            </div>       
         </form>
     </footer>
     <script src="https://kit.fontawesome.com/f4e216b3f1.js" crossorigin="anonymous"></script>
