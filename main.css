@@ -57,9 +57,17 @@ main{
     height: 30rem;
 }
 .dev-info{
-    margin-top: 4rem;
+    margin: 4rem 1rem 0 1rem;
     height: 30rem;
 }
+.contact-icon a{
+    color: white;
+}
+.contact-icon a:hover{
+    cursor: pointer;
+    color: rgb(0, 190, 242);
+}
+
 /**corousel image part**/
 .div-border{
     display: flex;
