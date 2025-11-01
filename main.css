@@ -45,20 +45,40 @@ nav{
 }
 
 /***main part***/
-/**profile image part**/
 main{
     min-height: 50vh;
+    min-width: 350px;
 }
-.dev-pic{
+/**profile image part**/
+.profile{
+    min-width: 100%;
+    height: auto;
     margin-top: 4rem;
-    width: 25rem;
-    min-width: 300px;
-    max-width: 500px;
-    height: 30rem;
 }
+/*profile image*/
+.dev-pic{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+}
+.dev-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*profile info*/
 .dev-info{
-    margin: 4rem 1rem 0 1rem;
-    height: 30rem;
+    width: 100%;
+    height: auto;
+}
+.dev-text{
+    width: 100%;
+    height: auto;
+}
+.more-info{
+    width: 100%;
+    height: auto;
 }
 .contact-icon a{
     color: white;
@@ -72,10 +92,13 @@ main{
 .div-border{
     display: flex;
     justify-content: center;
+    padding: 0;
+    width: 60rem;
+    height: 30rem;
 }
 .carou-border{
-    width: 40rem;
-    height: 30rem; 
+    width: 100%;
+    height: 100%;
 }
 .carousel-inner{
     width: 100%;
@@ -83,7 +106,7 @@ main{
 }
 .carousel-item{
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 .carousel-item img{
     width: 100%;
@@ -91,19 +114,12 @@ main{
 }
 .carousel-caption h2{
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.505);
 }
 
 
 /***footer part***/
 footer{
     min-height: 40vh;
-}
-
-
-/***Responsive for any devices***/
-@media all and (max-width: 765px) {
-    .dev-info{
-        margin-top: 2rem;
-    }
+    min-width: 350px;
 }
